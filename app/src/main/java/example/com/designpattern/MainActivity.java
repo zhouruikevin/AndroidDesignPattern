@@ -1,6 +1,8 @@
 package example.com.designpattern;
 
 import android.app.Activity;
+import android.os.Binder;
+import android.os.Process;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 

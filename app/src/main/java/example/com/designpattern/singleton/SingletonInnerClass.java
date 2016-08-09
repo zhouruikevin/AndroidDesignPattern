@@ -9,19 +9,10 @@ public class SingletonInnerClass {
     }
 
     private static class SingletonHolder {
-        private SingletonInnerClass mInstance;
-
-        public SingletonHolder() {
-            mInstance = new SingletonInnerClass();
-        }
-
-        public SingletonInnerClass getmInstance() {
-            return mInstance;
-        }
-
+        private static SingletonInnerClass mInstance = new SingletonInnerClass();
     }
 
     public static SingletonInnerClass getmInstance() {
-        return new SingletonHolder().getmInstance();
+        return SingletonHolder.mInstance;
     }
 }
