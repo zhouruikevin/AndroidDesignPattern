@@ -10,7 +10,7 @@ import example.com.designpattern.prototype.ShallowProto;
 /**
  * Created by Administrator on 2016/8/9.
  */
-public class ProtoType {
+public class ProtoTypeTest {
     @Test
     public void testShallowProto() {
         ArrayList<String> mDatas = new ArrayList<String>();
