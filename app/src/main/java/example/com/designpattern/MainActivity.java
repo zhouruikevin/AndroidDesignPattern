@@ -2,10 +2,14 @@ package example.com.designpattern;
 
 import android.app.Activity;
 import android.content.Intent;
+import android.graphics.BitmapFactory;
 import android.os.Binder;
 import android.os.Process;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.view.LayoutInflater;
+
+import java.security.cert.CertificateFactory;
 
 import example.com.designpattern.singleton.IActivityManager;
 import example.com.designpattern.singleton.SingleInstance;
@@ -24,5 +28,7 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+        getSystemService()
     }
+
 }
